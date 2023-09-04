@@ -28,36 +28,30 @@
 //   }
 // };
 
-//refactor
-var isValid = function (s) {
-  const array = s.split("");
-  const list = [];
-  if (array[0] === ")" || array[0] === "}" || array[0] === "]") {
-    return false;
-  } else {
-    list.push(array[0]);
-  }
-  for (let i = 1; i < array.length; i++) {
-    if (array[i] === ")" || array[i] === "}" || array[i] === "]") {
-      const ele = list.pop();
-      if (
-        !(
-          (ele === "(" && array[i] === ")") ||
-          (ele === "{" && array[i] === "}") ||
-          (ele === "[" && array[i] === "]")
-        )
-      )
-        return false;
-    } else {
-      list.push(array[i]);
-    }
-  }
+//refactor and map
+// var isValid = function (s) {
+//   const array = s.split("");
+//   const list = [];
+//   const map = { ")": "(", "}": "{", "]": "[" };
+//   for (let i = 0; i < array.length; i++) {
+//     if (map[array[i]] === undefined) list.push(array[i]);
+//     else if (list.length === 0 || map[array[i]] !== list.pop()) {
+//       return false;
+//     }
+//   }
 
-  if (!list.length) {
-    return true;
-  } else {
-    return false;
-  }
+//   return list.length === 0;
+// };
+
+//string op
+var isValid = function (s) {
+  let length;
+  do {
+    length = s.length;
+    s = s.replace("()", "").replace("{}", "").replace("[]", "");
+  } while (length != s.length);
+
+  return s.length === 0;
 };
 
 const s = "(([]){})";
