@@ -54,6 +54,6 @@ var threeSum = function (nums) {
   return output;
 };
 
-const nums = [-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4];
+const nums = [-2, -1, -1, 1, 1, 2, 2];
 // threeSum(nums);
 console.log(threeSum(nums));
