@@ -5,4 +5,4 @@ Tree Traversal
 pre-order:root-left-right
 In-order:left-root-right
 Post-order:left-right-root
-![Alt text](image-1.png)
+![Alt text](image.png)
