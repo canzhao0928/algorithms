@@ -6,3 +6,7 @@ pre-order:root-left-right
 In-order:left-root-right
 Post-order:left-right-root
 ![Alt text](image.png)
+Recursion
+![Alt text](image-1.png)
+Divde & Conquer
+![Alt text](image-2.png)
