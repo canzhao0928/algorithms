@@ -27,7 +27,7 @@
 //   return n < 0 ? 1 / pow : pow;
 // };
 
-// recursion(level, p1,p2){
+//------formulas-------- recursion(level, p1,p2){
 //   //recursion terminator
 //   if(level>maxLever) return;
 //   //process the data
