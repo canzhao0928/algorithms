@@ -27,16 +27,6 @@
 //   return n < 0 ? 1 / pow : pow;
 // };
 
-//------formulas-------- recursion(level, p1,p2){
-//   //recursion terminator
-//   if(level>maxLever) return;
-//   //process the data
-//   //drill down
-//   recursion(level-1,p3,p4)
-//   //reverse state
-//   revers_state(value)
-// }
-
 var myPow = function (x, n) {
   if (n === 0) {
     return 1;
